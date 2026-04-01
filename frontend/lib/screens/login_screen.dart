@@ -9,7 +9,6 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
@@ -42,7 +41,6 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF5F7FA),
-
       body: Center(
         child: SingleChildScrollView(
           child: ConstrainedBox(
@@ -53,14 +51,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 borderRadius: BorderRadius.circular(20),
               ),
               margin: const EdgeInsets.all(12),
-
               child: Padding(
                 padding: const EdgeInsets.all(12),
-
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-
                     const SizedBox(height: 20),
 
                     /// 🔥 TITLE
@@ -127,7 +122,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                         ),
                         child: isLoading
-                            ? const CircularProgressIndicator(color: Colors.white)
+                            ? const CircularProgressIndicator(
+                                color: Colors.white)
                             : const Text("Login"),
                       ),
                     ),
@@ -135,8 +131,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     const SizedBox(height: 20),
 
                     /// 🔗 REGISTER
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                    Wrap(
+                      alignment: WrapAlignment.center,
+                      crossAxisAlignment: WrapCrossAlignment.center,
                       children: [
                         const Text("Don't have an account? "),
                         GestureDetector(
