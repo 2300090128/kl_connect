@@ -1,0 +1,21 @@
+# Editor settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Flutter generated artifacts
+frontend/.dart_tool/
+frontend/build/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+frontend/.pub-cache/
+frontend/.pub/
+frontend/coverage/
+
+# Firebase / backend local artifacts
+backend/.firebase/
+backend/firebase-debug.log
+backend/node_modules/
